@@ -6,3 +6,4 @@
 // git remote get-url origin
 // git push origin main
 // git clone url_do_projeto_do_github nome_para_renomear(opcional)
+// git pull origin main
