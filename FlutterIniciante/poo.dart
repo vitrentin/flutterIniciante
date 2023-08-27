@@ -4,7 +4,8 @@ void main(List<String> args) {
   // Outras linguagens final person1 = new Person();
   final person1 = Person('Vinicius', 23);
   final person2 = Person('Rodrigo', 24);
-  // Utilizando const Person, caso os parâ
+  // Utilizando const Person, caso os parâmetros sejam os mesmos
+  // Um exemplo é caso for um mesmo Widget, ele acessa o mesmo na memória
 
   print(person1.age);
   print(person1 == person2); // false
@@ -26,6 +27,16 @@ class Person {
   // São propriedades globais
   int age = 30;
   String name = '';
+
+  //int get age => _age;
+  // static String getName(){
+  // return 'dfe'}
+  // Singleton:
+  // static final Person instance = Person(name:'sd',age: 30);
+  // Person.instance
+  // Instancia global que pode ser usada em qualquer lugar, mas não é constante
+  // print(Person.instance.hashcode);
+
   //Person(); //Método construtor
   // Só é possível deixar a variável privada no construtor, caso seja posicional
   // Não é possível deixar diretamente privada pelo modo nomeado.
